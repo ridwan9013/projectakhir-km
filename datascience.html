@@ -11,7 +11,7 @@
 </head>
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container">
-        <img src="logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        <img src="src/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
         <a class="navbar-brand" href="index.html">Encode Academy</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" aria-current="page" href="home.html">Home</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -34,26 +34,260 @@
                         <li><a class="dropdown-item" href="uiux.html">UI/UX Design</a></li>
                     </ul>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link" href="myprofile.html">My Profile</a>
                 </li>
-                <li class="nav-item">
-                    <a href="register.html" class="btn btn-outline-info">Register</a>
-                </li>
-                </li>
+
             </ul>
         </div>
     </div>
+    <ul>
+        <a class="nav-link" aria-current="page" href="index.html">Profile</a>
+    </ul>
 </nav>
 
 <body>
 
+    <!-- Banner -->
+    <section class="banner1">
+        <div class="container">
+
+            <h1>Data Scince</h1>
+
+        </div>
+    </section>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data Science</li>
+        </ol>
+    </nav>
+    <div class="row">
+        <div class="col py-3">
+            <div class="course-material">
+                <h5 class="mt-3" style="color: #000000; font-weight: 400;">Introduction to Data Science</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <section class="video">
+        <div class="container">
+            <div class="embed-responsive embed-responsive-16by9">
+                <div class="container d-flex justify-content-center align-items-center mt-5">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xC-c7E5PK0Y"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+    </section>
+    <div class="row">
+        <div class="col py-3">
+            <div class="course-material">
+                <h5 class="mt-3" style="color: #000000; font-weight: 400;">Data Science 1</h5>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KxryzSO1Fjs" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+    <div class="row">
+        <div class="col py-3">
+            <div class="course-material">
+                <h5 class="mt-3" style="color: #000000; font-weight: 400;">Data Science 2</h5>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RBSUwFGa6Fk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+    <section>
+        <div class="row">
+            <div class="col-md-11 mt-5">
+                <div class="Checkbox">
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexCheckDefault">Pre-test (50 soal)</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-1 mt-5" style="padding-left: 80px;">
+                <Input class="form-check-input" style="border: 1px solid #fbfbfb;" type="checkbox" value=""
+                    id="flexCheckDefault">
+            </div>
+            <div class="row">
+                <div class="col-md-11">
+                    <div class="Checkbox">
+                        <div class="form-check">
+                            <label class="form-check-label" for="flexCheckDefault">Ujian Data Science</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-1" style="padding-left: 80px;">
+                    <Input class="form-check-input" style="border: 2px solid #fbfbfb;" type="checkbox" value=""
+                        id="flexCheckDefault">
+                </div>
+    </section>
+    <div class="discussion">
+        <h2>Discussion Section</h2>
+        <div class="comments">
+            <!-- Example comment -->
+            <div class="comment">
+                <p class="comment-author">John Doe:</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <!-- Example comment -->
+            <div class="comment">
+                <p class="comment-author">Jane Smith:</p>
+                <p>Nulla facilisi. In hac habitasse platea dictumst.</p>
+            </div>
+        </div>
+
+        <!-- Comment form -->
+        <form id="comment-form">
+            <h3>Leave a Comment</h3>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- JavaScript code to handle form submission -->
+    <script>
+        document.getElementById("comment-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Get the input values
+            var name = document.getElementById("name").value;
+            var comment = document.getElementById("comment").value;
+
+            // Create a new comment element
+            var newComment = document.createElement("div");
+            newComment.classList.add("comment");
+            newComment.innerHTML = "<p class='comment-author'>" + name + ":</p><p>" +
+                comment +
+                "</p>";
+
+            // Append the new comment to the comments section
+            var commentsSection = document.querySelector(".comments");
+            commentsSection.appendChild(newComment);
+
+            // Reset the form
+            document.getElementById("comment-form").reset();
+        });
+    </script>
 </body>
+
 <!-- Footer -->
-<footer class="bg-dark text-white text-center py-3 mt-5">
-    <p>&copy; 2023 Encode Academy. All rights reserved.</p>
-</footer>
+<div class="footer">
+    <div class="container mt-3"
+        style=" background-color: #cecece; max-width: 100%; color : rgb(0, 0, 0); padding: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col text-left">
+                    <div class="text-left">
+                        <table class="table">
+                            <table class="table table-sm  table-borderless m-3" style=" border: none;">
+                                <tbody>
+                                    <tr>
+                                        <td style="border:none; background-color: #cecece;">
+
+                                        </td>
+                                        <td
+                                            style="text-align: left; font-weight: bold; border: none; background-color: #cecece; color: rgb(0, 0, 0);">
+                                            <h5>Page</h5>
+                                        </td>
+                                    </tr>
+                                    <tr>
+
+                                        <td style="border:none; background-color: #cecece;">
+
+                                        </td>
+                                        <td
+                                            style="text-align: left; border: none; background-color: #cecece; color: rgb(0, 0, 0);">
+                                            <p>Dashboard</p>
+                                            <p>Career Bootcamp</p>
+                                            <p>My Profile</p>
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+                <div class="col text-center mx-5">
+                    <h1></h1>
+                </div>
+                <div class="col ml-5 text-right">
+                    <div class="text-right ml-5">
+                        <table class="table">
+                            <table class="table table-sm  table-borderless" style=" border: none;">
+                                <tbody>
+                                    <tr>
+                                        <td style="border:none; background-color: #cecece; ">
+
+                                        </td>
+                                        <td
+                                            style="text-align: right; font-weight: bold; border: none; color: rgb(0, 0, 0); background-color: #cecece;">
+                                            <h5>Hubungi Kami</h5>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:none; background-color: #cecece; ">
+
+                                        </td>
+                                        <td
+                                            style="text-align: right; border:none; background-color: #cecece; color: rgb(0, 0, 0);">
+                                            081282761312</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:none; background-color: #cecece; ">
+
+                                        </td>
+                                        <td
+                                            style="text-align: right; border:none; background-color: #cecece; color: rgb(0, 0, 0);">
+                                            encode@encode.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:none; background-color: #cecece;">
+
+                                        </td>
+                                        <td
+                                            style="text-align: right; border:none; background-color: #cecece; color: rgb(0, 0, 0);">
+                                            Ruko Grand ITC Permata Hijau Blok Saphire No.14 - Jl. Letjen Soepeno (Arteri
+                                            Permata Hijau) - Kebayoran Lama, Grogol Utara, Jakarta Selatan 12210</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center align-items-center">
+            <a class="featured-image"> <img src="src/logo.png" alt="Logo" style="width: 50px;"></a>
+        </div>
+        <div class="container d-flex justify-content-center align-items-center">
+            <p class="col text-center">Encode Academy, All right reserved (2023)<p>
+        </div>
+    </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
 </script>
+
 
 </html>

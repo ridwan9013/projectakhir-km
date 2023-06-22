@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container">
+        <img src="src/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="index.html">Encode Academy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#bootcamp" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Career Bootcamp
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#data-science">Data Science</a></li>
+                        <li><a class="dropdown-item" href="#digmet">Digital Marketing</a></li>
+                        <li><a class="dropdown-item" href="#uiux">UI/UX Design</a></li>
+                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a href="register.html" class="btn btn-outline-info">Register</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="banner">
+        <h1>Welcome to the Discussion Page!</h1>
+        <p>Feel free to share your thoughts and engage in discussions.</p>
+    </div>
+
+    <div class="discussion">
+        <h2>Discussion Section</h2>
+        <div class="comments">
+            <!-- Example comment -->
+            <div class="comment">
+                <p class="comment-author">John Doe:</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <!-- Example comment -->
+            <div class="comment">
+                <p class="comment-author">Jane Smith:</p>
+                <p>Nulla facilisi. In hac habitasse platea dictumst.</p>
+            </div>
+        </div>
+
+        <!-- Comment form -->
+        <form id="comment-form">
+            <h3>Leave a Comment</h3>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- JavaScript code to handle form submission -->
+    <script>
+        document.getElementById("comment-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Get the input values
+            var name = document.getElementById("name").value;
+            var comment = document.getElementById("comment").value;
+
+            // Create a new comment element
+            var newComment = document.createElement("div");
+            newComment.classList.add("comment");
+            newComment.innerHTML = "<p class='comment-author'>" + name + ":</p><p>" + comment + "</p>";
+
+            // Append the new comment to the comments section
+            var commentsSection = document.querySelector(".comments");
+            commentsSection.appendChild(newComment);
+
+            // Reset the form
+            document.getElementById("comment-form").reset();
+        });
+    </script>
+</body>
+
+<!-- Footer -->
+<footer class="footer text-dark text-center py-3 mt-5">
+    <p>&copy; 2023 Encode Academy. All rights reserved.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+</script>
+
+</html>
